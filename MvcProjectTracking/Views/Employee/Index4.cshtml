@@ -1,0 +1,18 @@
+﻿@model List<Employee>
+@{
+    ViewData["Title"] = "Index4";
+}
+
+<h1>Personel Listesi</h1>
+
+@foreach (var item in Model)
+{
+   <div class="lead my-2">
+       <h6>@item.FullName</h6>
+       <p>@item.Id</p>
+       <p><strong>Age:</strong>@item.Age</p>
+       <hr />
+   </div>
+
+}
+
